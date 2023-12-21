@@ -1,0 +1,117 @@
+/* Overall styling for the body */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Styling for the main calculator container */
+.calculator-container {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  /* It allows the calculator container to grow and fill the remaining space */
+  margin: 20px;
+}
+
+/* Styling for the calculator itself */
+.calculator {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  padding: 20px;
+}
+
+/* Styling for the calculator display area */
+#display {
+  width: calc(100% - 20px);
+  padding: 10px;
+  font-size: 1.5em;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  text-align: right;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+/* Styling for the calculator buttons grid */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* Styling for individual calculator buttons */
+button {
+  padding: 15px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect for buttons */
+button:hover {
+  background-color: #e5e5e5;
+}
+
+/* Styling for operator and equals buttons */
+.operator,
+.equals {
+  background-color: #ff9800;
+  color: #fff;
+  border: 1px solid #ff9800;
+}
+
+/* Hover effect for operator and equals buttons */
+.operator:hover,
+.equals:hover {
+  background-color: #e08a00;
+}
+
+/* Styling for the functionality section */
+.functionality {
+  margin-left: 20px;
+  text-align: left;
+}
+
+/* Styling for functionality section heading */
+.functionality h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+/* Styling for functionality section list */
+.functionality ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Styling for functionality section list items */
+.functionality li {
+  margin-bottom: 5px;
+}
+
+/* Styling for the header */
+.header {
+  text-align: center;
+  background-color: #333;
+  color: #ff9800;
+  padding: 10px;
+}
+
+/* Styling for the footer */
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: #ff9800;
+}

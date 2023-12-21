@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Hw6_Calculator</title>
+</head>
+
+<body>
+  <!-- Header section -->
+  <header class="header">
+    <h1>Calculator App-Avinash</h1>
+  </header>
+
+  <div class="calculator-container">
+
+    <div class="calculator">
+
+      <input type="text" id="display" readonly>
+      <!-- Calculator buttons -->
+      <div class="buttons">
+        <button class="operator" onclick="clearDisplay()">C</button>
+        <button class="operator" onclick="appendCharacter('(')">(</button>
+        <button class="operator" onclick="appendCharacter(')')">)</button>
+        <button class="operator" onclick="appendCharacter('/')">/</button>
+        <button onclick="appendCharacter('7')">7</button>
+        <button onclick="appendCharacter('8')">8</button>
+        <button onclick="appendCharacter('9')">9</button>
+        <button class="operator" onclick="appendCharacter('*')">*</button>
+        <button onclick="appendCharacter('4')">4</button>
+        <button onclick="appendCharacter('5')">5</button>
+        <button onclick="appendCharacter('6')">6</button>
+        <button class="operator" onclick="appendCharacter('-')">-</button>
+        <button onclick="appendCharacter('1')">1</button>
+        <button onclick="appendCharacter('2')">2</button>
+        <button onclick="appendCharacter('3')">3</button>
+        <button class="operator" onclick="appendCharacter('+')">+</button>
+        <button onclick="appendCharacter('0')">0</button>
+        <button onclick="appendCharacter('.')">.</button>
+        <button onclick="appendCharacter('Math.log10(')">log</button>
+        <button class="equals" onclick="calculateResult()">=</button>
+      </div>
+    </div>
+    <!-- Functionality section -->
+    <div class="functionality">
+      <!-- List of calculator functionalities -->
+      <h3>Functionality</h3>
+      <ul>
+        <li>C: Clear</li>
+        <li>(: Open Parenthesis</li>
+        <li>): Close Parenthesis</li>
+        <li>/: Divide</li>
+        <li>*: Multiply</li>
+        <li>-: Subtract</li>
+        <li>+: Add</li>
+        <li>log: Logarithm</li>
+        <li>^: Exponentiation</li>
+        <li>=: Calculate Result</li>
+      </ul>
+    </div>
+
+  </div>
+  <!-- Footer section -->
+  <footer class="footer">
+    <p>&copy; 2023 Calculator App-Avinash.All rights reserved</p>
+  </footer>
+  <!-- Link to external JavaScript file -->
+  <script src="script.js"></script>
+</body>
+
+</html>
